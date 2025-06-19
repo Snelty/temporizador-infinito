@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tempo-sn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="timer-container">
+        <h1 class="text-3xl font-bold text-center mb-6 text-emerald-400">Tempo by Snelty</h1> 
+        <div class="flex justify-center space-x-4 mb-6">
+            <button id="showStandardTimer" class="tab-button active">Temporizador</button>
+            <button id="showContinuousTimer" class="tab-button">Temporizador Infinito</button>
+        </div>
+        <div id="standardTimerSection">
+            <h2 class="text-2xl font-semibold text-center mb-4">Temporizador</h2>
+            <div id="standardTimeDisplay" class="time-display text-center">00:00:00</div>
+            <div class="grid grid-cols-3 gap-3 mb-4">
+                <div>
+                    <label for="stdHours" class="input-group label">Horas</label>
+                    <input type="number" id="stdHours" class="input-field" placeholder="HH" min="0" value="0">
+                </div>
+                <div>
+                    <label for="stdMinutes" class="input-group label">Minutos</label>
+                    <input type="number" id="stdMinutes" class="input-field" placeholder="MM" min="0" max="59" value="0">
+                </div>
+                <div>
+                    <label for="stdSeconds" class="input-group label">Segundos</label>
+                    <input type="number" id="stdSeconds" class="input-field" placeholder="SS" min="0" max="59" value="10">
+                </div>
+            </div>
+
+            <div class="flex justify-around space-x-3">
+                <button id="stdStart" class="control-button">Iniciar</button>
+                <button id="stdPause" class="control-button pause" disabled>Pausar</button>
+                <button id="stdReset" class="control-button reset">Reiniciar</button>
+            </div>
+            <p id="stdStatus" class="text-center mt-3 status-message"></p>
+        </div>
+        <div id="continuousTimerSection" class="hidden">
+            <h2 class="text-2xl font-semibold text-center mb-4">Temporizador Infinito</h2>
+            <div id="continuousTimeDisplay" class="time-display text-center">--:--:--</div>
+             <p class="text-sm text-gray-400 text-center mb-4">Sonará una alarma en cada intervalo.</p>
+
+            <div class="mb-4">
+                <p class="text-lg font-medium mb-2 text-center">Establecer Intervalo:</p>
+                <div class="grid grid-cols-3 gap-3">
+                    <div>
+                        <label for="contHours" class="input-group label">Horas</label>
+                        <input type="number" id="contHours" class="input-field" placeholder="HH" min="0" value="0">
+                    </div>
+                    <div>
+                        <label for="contMinutes" class="input-group label">Minutos</label>
+                        <input type="number" id="contMinutes" class="input-field" placeholder="MM" min="0" max="59" value="0">
+                    </div>
+                    <div>
+                        <label for="contSeconds" class="input-group label">Segundos</label>
+                        <input type="number" id="contSeconds" class="input-field" placeholder="SS" min="0" max="59" value="5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <label for="pauseKey" class="input-group label text-center">Tecla para Pausar/Reanudar (ejemplo: "p")</label>
+                <input type="text" id="pauseKey" class="input-field text-center" placeholder="Presiona una tecla y suéltala" value="p">
+            </div>
+            
+            <div class="flex justify-around space-x-3">
+                <button id="contStart" class="control-button">Iniciar</button>
+                <button id="contPause" class="control-button pause" disabled>Pausar</button>
+                <button id="contReset" class="control-button reset">Reiniciar</button>
+            </div>
+             <p id="contStatus" class="text-center mt-3 status-message"></p>
+        </div>
+    </div>
+    <footer>
+        <p>Hecho con cariño por Snelty ♥</p>
+    </footer>
+    <script src="tempo.js"></script>
+</body>
+</html>
