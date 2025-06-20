@@ -2,7 +2,7 @@
 
 Un temporizador web interactivo con dos modos: estándar y continuo. Hecho con JavaScript, TailwindCSS y Tone.js para generar sonidos al final de cada intervalo.
 
-![Demo](https://snelty.github.io/temporizador-infinito/)
+[Demo](https://snelty.github.io/temporizador-infinito/)
 
 ## 🚀 Características
 
