@@ -1,32 +1,29 @@
 # ⏱️ Temporizador Infinito
 
-Un temporizador web sencillo y elegante creado con TailwindCSS y Tone.js.
+Un temporizador web interactivo con dos modos: estándar y continuo. Hecho con JavaScript, TailwindCSS y Tone.js para generar sonidos al final de cada intervalo.
 
-## 🚩 Actualizaciones futuras
+![Demo]
 
-El temporizador será actualizado con el tiempo y se piensa añadir nuevas funciones
+## 🚀 Características
 
-## ✨ Funciones
+- ✅ Temporizador estándar (cuenta regresiva)
+- ♾️ Temporizador infinito con intervalos repetidos
+- 🔉 Sonido al finalizar intervalo
+- 🎹 Usando [Tone.js](https://tonejs.github.io/)
+- 💅 Estilos con TailwindCSS
+- ⌨️ Tecla personalizada para pausar/reanudar
 
-- Temporizador estándar con cuenta regresiva
-- Temporizador infinito con intervalos de sonido
-- Interfaz responsiva y personalizable
-- Tecla configurable para pausar/reanudar
+## 🔧 Tecnologías
 
-## 🔧 Tecnologías usadas
-
-- HTML5
-- TailwindCSS
+- HTML
+- CSS con Tailwind
 - JavaScript
-- [Tone.js](https://tonejs.github.io/)
-
-## 🚀 Uso
-
-1. Abre `index.html` en tu navegador.
-2. Establece el tiempo o intervalo.
-3. Presiona "Iniciar" para comenzar.
-4. Disfruta del sonido al finalizar el intervalo.
+- Tone.js
 
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT.
+Distribuido bajo la Licencia MIT.
+
+---
+
+Hecho con cariño ♥ por [Snelty](https://github.com/Snelty)
