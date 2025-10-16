@@ -9,9 +9,8 @@ Un temporizador web interactivo con dos modos: estándar y continuo. Hecho con J
 - ✅ Temporizador estándar (cuenta regresiva)
 - ♾️ Temporizador infinito con intervalos repetidos
 - 🔉 Sonido al finalizar intervalo
-- 🎹 Usando [Tone.js](https://tonejs.github.io/)
-- 💅 Estilos con TailwindCSS
-- ⌨️ Tecla personalizada para pausar/reanudar
+- Uso de [Tone.js](https://tonejs.github.io/)
+- Podras modificar la keybind para pausar/reanudar
 
 ## 🔧 Tecnologías
 
